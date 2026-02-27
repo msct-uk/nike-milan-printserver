@@ -5,6 +5,7 @@ import path from "path";
 const config = useRuntimeConfig();
 
 export default defineEventHandler(async (event) => {
+  console.log("got print request");
   const body = await readBody(event);
 
   if (!body.session || !body.image) {
