@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
       return { file: el, mtimeMs: fl.mtimeMs };
     }),
   );
-  sortList.sort((a, b) => a.mtimeMs - b.mtimeMs);
+  sortList.sort((a, b) => b.mtimeMs - a.mtimeMs);
 
   return { list: sortList };
 });

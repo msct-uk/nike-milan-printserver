@@ -1,7 +1,7 @@
 <template>
   <div class="w-screen h-screen p-2">
-    <div class="w-full text-5xl text-center">Print Server Page</div>
-    <div class="w-full grid grid-cols-5 gap-2 mt-2">
+    <div class="w-full text-5xl text-center">Photobooth Reprints</div>
+    <div class="w-full grid grid-cols-6 gap-2 mt-2">
       <div v-for="(reprint, index) in reprints" :key="index">
         <div
           class="w-full h-full p-4 pb-2 bg-slate-200 flex flex-col justify-between"
